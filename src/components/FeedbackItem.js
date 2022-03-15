@@ -1,5 +1,15 @@
-const FeedbackItem = () => {
-  return <div>FeedbackItem</div>;
+import { useState } from "react";
+
+const FeedbackItem = ({ item }) => {
+  //const [rating, setRating] = useState(8);
+  //const [text, setText] = useState("Example of a feedback item");
+
+  return (
+    <div className="card">
+      <div className="num-display">{item.rating}</div>
+      <div className="text-display">{item.text}</div>
+    </div>
+  );
 };
 
 export default FeedbackItem;
