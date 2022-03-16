@@ -9,13 +9,27 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from "./components/AboutPage";
 import AboutLink from "./components/AboutLink";
+import MultipleInput from "./multipleinput/MultipleInput";
 
 function App() {
   //const [feedback, setFeedback] = useState(FeedbackData);
   // app level state
 
   return (
-    <FeedbackProvider>
+    <div className="container">
+      <MultipleInput />
+    </div>
+  );
+}
+
+export default App;
+
+// 1. skapa en header
+// 2. skapa FeedbackItem: representera ett omdöme och en score
+// 3. skapa FeedbackList: ska visa alla feedbackitems
+
+/*
+<FeedbackProvider>
       <Router>
         <Header />
         <div className="container">
@@ -37,11 +51,4 @@ function App() {
         </div>
       </Router>
     </FeedbackProvider>
-  );
-}
-
-export default App;
-
-// 1. skapa en header
-// 2. skapa FeedbackItem: representera ett omdöme och en score
-// 3. skapa FeedbackList: ska visa alla feedbackitems
+*/
