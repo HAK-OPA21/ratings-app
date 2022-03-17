@@ -10,8 +10,6 @@ const FeedbackItem = ({ item }) => {
 
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
 
-  //TODO edit and delete from context
-
   return (
     <Card>
       <div className="num-display">{item.rating}</div>

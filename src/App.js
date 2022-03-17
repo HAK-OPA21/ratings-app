@@ -16,20 +16,7 @@ function App() {
   // app level state
 
   return (
-    <div className="container">
-      <MultipleInput />
-    </div>
-  );
-}
-
-export default App;
-
-// 1. skapa en header
-// 2. skapa FeedbackItem: representera ett omdöme och en score
-// 3. skapa FeedbackList: ska visa alla feedbackitems
-
-/*
-<FeedbackProvider>
+    <FeedbackProvider>
       <Router>
         <Header />
         <div className="container">
@@ -51,4 +38,11 @@ export default App;
         </div>
       </Router>
     </FeedbackProvider>
-*/
+  );
+}
+
+export default App;
+
+// 1. skapa en header
+// 2. skapa FeedbackItem: representera ett omdöme och en score
+// 3. skapa FeedbackList: ska visa alla feedbackitems
